@@ -55,7 +55,7 @@ class SSHManager:
 
 
 ssh_manager = SSHManager()
-ssh_manager.create_ssh_client("169.254.144.57", "ryanshim", "Tlaaudqh86!") # 세션생성
+ssh_manager.create_ssh_client("remote ip address", "username", "password") # 세션생성
 ssh_manager.send_file("./deploy.py", "~/uni") # 파일전송
 #ssh_manager.get_file('remote_path', 'local_path')  # 파일다운로드
 print(ssh_manager.send_command("pwd"))
